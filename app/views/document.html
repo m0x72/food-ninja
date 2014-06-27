@@ -1,4 +1,8 @@
 <p>This is the document view.</p>
+	<div>Documents: <button ng-click="getDocumentList()">Get</button>
+		<pre>{{documents}}</pre>
+	</div>
+
 <input type="file" fileread="document"/>
 <p>Document: {{document}}</p>
 <button ng-click="uploadDocument()">upload me</button>

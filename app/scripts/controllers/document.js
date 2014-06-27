@@ -23,37 +23,27 @@ angular.module('foodNinjaApp')
     	
     	console.log('formdata', formData);
     	
-    	Giniapi.documentUpload(formData).success(function(data, status, header, config) {
-    		console.log("succes: ", arguments);
-    		$scope.documentId = header('location').replace(/^https:\/\/api.gini.net\/documents\//, '');
-    	});
+    	// Giniapi.documentUpload(formData).success(function(data, status, header, config) {
+    	// 	console.log("succes: ", arguments);
+    	// 	$scope.documentId = header('location').replace(/^https:\/\/api.gini.net\/documents\//, '');
+    	// });
+    	$scope.document = Giniapi.resDocument.save({}, formData);
+    };
+
+    $scope.getDocumentList = function() {
+   		$scope.documents = Giniapi.resDocument.query();
+    };
 
     $scope.getDocument = function() {
-    	Giniapi.document($scope.documentId).success(function(data, status, header, config) {
-    		$scope.giniDocument = data;
-    		$scope.giniDocument = JSON.stringify($scope.giniDocument, undefined, 2);
-    	});
+    	$scope.document.$get().then(function(data) {$scope.giniDocument = data;});
     };
     $scope.getDocumentLayout = function() {
-    	Giniapi.documentLayout($scope.documentId).success(function(data, status, header, config) {
-    		$scope.giniDocumentLayout = data;
-    		$scope.giniDocumentLayout = JSON.stringify($scope.giniDocumentLayout, undefined, 2);
-    	});
-    };
-    $scope.getDocumentProcessed = function() {
-    	Giniapi.documentProcessed($scope.documentId).success(function(data, status, header, config) {
-    		$scope.giniDocumentProcessed = data;
-    		$scope.giniDocumentProcessed = JSON.stringify($scope.giniDocumentProcessed, undefined, 2);
-    	});
+    	$scope.giniDocumentLayout = Giniapi.resDocument.layout({documentId: $scope.document.id});
     };
     $scope.getDocumentExtractions = function() {
-    	Giniapi.documentExtractions($scope.documentId).success(function(data, status, header, config) {
-    		$scope.giniDocumentExtractions = data;
-    		$scope.giniDocumentExtractions = JSON.stringify($scope.giniDocumentExtractions, undefined, 2);
-    	});
-    }
+    	$scope.giniDocumentExtractions = Giniapi.resDocument.extractions({documentId: $scope.document.id});
+    };
 
     	//var doc = new Giniapi.document({})
     	//Giniapi.document.save(formData);
-    };
   });
