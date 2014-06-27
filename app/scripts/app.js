@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'angularOAuth'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -27,7 +28,27 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+      .when('/auth', {
+        templateUrl: 'views/auth.html',
+        controller: 'AuthCtrl'
+      })
+      .when('/authCallback', {
+        templateUrl: 'views/authcallback.html',
+        controller: 'AuthcallbackCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })
+  // .config(function($httpProvider) {
+  //   $httpProvider.interceptors.push('oauthHttpInterceptor');
+  // });
+  .config(function(OAuthProvider) {
+    OAuthProvider.extendConfig({
+      clientId: 'team6',
+      redirectUri: 'http://localhost:9000/#/authCallback?',
+      authorizationEndpoint: 'https://user.gini.net/oauth/authorize',
+      verifyFunc: 'test'
+    });
+  })
+  ;
