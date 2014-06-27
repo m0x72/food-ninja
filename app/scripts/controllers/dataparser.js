@@ -102,7 +102,7 @@ angular.module('foodNinjaApp').controller('DataparserCtrl', function ($scope, Du
     }
 
     console.log(nr_products);
-    Reciepts.addReciepts(Myunicorndata);
+    Reciepts.addReciept(Myunicorndata);
     return allPars.length;
 
     /*
