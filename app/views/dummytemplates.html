@@ -1,17 +1,16 @@
-<table class="table">
-	<tr>
-		<th>Name</th>
-		<th>Price</th>
-	</tr>
-	<tr ng-repeat="product in products">
-		<td>{{product.name}}</td>
-		<td>{{product.price}}</td>
-	</tr>
-</table>
-<ul>
-	<li ng-repeat="reciept in reciepts">
-		<ul>
-			<li ng-repeat="product in reciept">{{product.name}}:{{product.price}}</li>
+<ul style="list-style-type:none;">
+		<ul class="list-inline">
+  			<li>Name</li>
+  			<li>Price</li>
 		</ul>
+	<li ng-repeat="reciept in reciepts">
+		<table class="table">
+	    	<tr ng-repeat="product in reciept">
+		        <td >{{product.name}}</td>
+		        <td >{{product.price}}</td>
+	    	</tr>
+	</table>
 	</li>
 </ul>
+
+
