@@ -36,10 +36,6 @@ angular
         templateUrl: 'views/authcallback.html',
         controller: 'AuthcallbackCtrl'
       })
-      .when('/document', {
-        templateUrl: 'views/document.html',
-        controller: 'DocumentCtrl'
-      })
       .when('/dataparser', {
         templateUrl: 'views/dataparser.html',
         controller: 'DataparserCtrl'
@@ -47,6 +43,18 @@ angular
       .when('/dummytemplates', {
         templateUrl: 'views/dummytemplates.html',
         controller: 'DummytemplatesCtrl'
+      })
+      .when('/documents', {
+        templateUrl: 'views/documents.html',
+        controller: 'DocumentsCtrl'
+      })
+      .when('/document/:id', {
+        templateUrl: 'views/document.html',
+        controller: 'DocumentCtrl'
+      })
+      .when('/upload', {
+        templateUrl: 'views/upload.html',
+        controller: 'UploadCtrl'
       })
       .otherwise({
         redirectTo: '/'

@@ -1,4 +1,8 @@
-<p>This is the document view.</p>
+<!-- <p>This is the document view.</p>
+	<div>Documents: <button ng-click="getDocumentList()">Get</button>
+		<pre>{{documents}}</pre>
+	</div>
+
 <input type="file" fileread="document"/>
 <p>Document: {{document}}</p>
 <button ng-click="uploadDocument()">upload me</button>
@@ -17,4 +21,7 @@
 	<div>DocumentExtractions: <button ng-click="getDocumentExtractions()">Get</button>
 		<pre>{{giniDocumentExtractions}}</pre>
 	</div>
-</p>
+</p> -->
+<p>This is the document view.</p>
+<pre>{{document}}</pre>
+<img ng-src="{{document.pages[0].images['750x900']}}?token={{token}}">
