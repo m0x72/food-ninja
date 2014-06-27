@@ -8,13 +8,14 @@
  * Controller of the foodNinjaApp
  */
 angular.module('foodNinjaApp')
-  .controller('DummytemplatesCtrl', function ($scope) {
+  .controller('DummytemplatesCtrl', function ($scope, Reciepts) {
   	//dont delete awesomethings
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+  /*
     $scope.products = [
     	{
     		name: 'Einhorn',
@@ -33,4 +34,7 @@ angular.module('foodNinjaApp')
     		price: '0.02'
     	}
     ]
+  */
+  $scope.reciepts = Reciepts.getReciepts();
+  //console.log($scope.reciepts);
   });
