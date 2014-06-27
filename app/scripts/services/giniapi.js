@@ -63,7 +63,7 @@ angular.module('foodNinjaApp')
   			}
   		});
     };
-    this.documentProcessed = function(formdata) {
+    this.documentProcessed = function(id) {
     	return $http({
     		url: giniApiSuffix + '/documents/' + id + '/processed', 
     		method: 'GET', 
@@ -76,7 +76,7 @@ angular.module('foodNinjaApp')
   			}
   		});
     };
-    this.documentExtractions = function(formdata) {
+    this.documentExtractions = function(id) {
     	return $http({
     		url: giniApiSuffix + '/documents/' + id + '/extractions', 
     		method: 'GET', 
