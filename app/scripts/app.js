@@ -40,9 +40,7 @@ angular
         redirectTo: '/'
       });
   })
-  // .config(function($httpProvider) {
-  //   $httpProvider.interceptors.push('oauthHttpInterceptor');
-  // });
+  
   .config(function(OAuthProvider) {
     OAuthProvider.extendConfig({
       clientId: 'team6',
@@ -50,5 +48,8 @@ angular
       authorizationEndpoint: 'https://user.gini.net/oauth/authorize',
       verifyFunc: 'test'
     });
+  })
+  .config(function($httpProvider) {
+    $httpProvider.interceptors.push('oauthHttpInterceptor');
   })
   ;

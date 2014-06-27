@@ -24,6 +24,4 @@ angular.module('foodNinjaApp')
     	});
     };
 
-    //$scope.routeParams = $routeParams;
-
   });

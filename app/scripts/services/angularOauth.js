@@ -48,7 +48,7 @@ angular.module('angularOAuth', [])
       config = angular.extend(config, configExtension);
     };
 
-    this.$get = function($q, $http, $window, $rootScope) {
+    this.$get = function($q, $window, $rootScope) {
       var requiredAndMissing = [];
       angular.forEach(config, function(value, key) {
         if (value === REQUIRED_AND_MISSING) {
