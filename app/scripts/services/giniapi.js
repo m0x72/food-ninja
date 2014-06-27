@@ -26,7 +26,7 @@ angular.module('foodNinjaApp')
   	// );
     this.documentUpload = function(formdata) {
     	return $http({
-    		url: giniApiSuffix + '/documents', 
+    		url: giniApiSuffix + '/documents?filename=file.pdf&doctype=Receipt', 
     		method: 'POST', 
     		data: formdata,
     		transformRequest: angular.identity,
@@ -45,7 +45,7 @@ angular.module('foodNinjaApp')
     		//transformRequest: angular.identity,
     		headers: {
     			'Authorization': 'Bearer',
-  				'Accept': 'application/vnd.gini.v1+json',
+  				'Accept': 'application/vnd.gini.incubator+json',
   				//'Content-Type': undefined //'multipart/form-data'
   			}
   		});
@@ -58,7 +58,7 @@ angular.module('foodNinjaApp')
     		//transformRequest: angular.identity,
     		headers: {
     			'Authorization': 'Bearer',
-  				'Accept': 'application/vnd.gini.v1+json',
+  				'Accept': 'application/vnd.gini.incubator+json',
   				//'Content-Type': undefined //'multipart/form-data'
   			}
   		});
@@ -71,7 +71,7 @@ angular.module('foodNinjaApp')
     		//transformRequest: angular.identity,
     		headers: {
     			'Authorization': 'Bearer',
-  				'Accept': 'application/vnd.gini.v1+json',
+  				'Accept': 'application/vnd.gini.incubator+json',
   				//'Content-Type': undefined //'multipart/form-data'
   			}
   		});
@@ -84,7 +84,7 @@ angular.module('foodNinjaApp')
     		//transformRequest: angular.identity,
     		headers: {
     			'Authorization': 'Bearer',
-  				'Accept': 'application/vnd.gini.v1+json',
+  				'Accept': 'application/vnd.gini.incubator+json',
   				//'Content-Type': undefined //'multipart/form-data'
   			}
   		});
