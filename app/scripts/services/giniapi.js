@@ -10,22 +10,22 @@
 angular.module('foodNinjaApp')
   .service('Giniapi', function Giniapi($resource, $http) {
   	var giniApiSuffix = 'https://api.gini.net';
-    this.document = $resource(
-    	giniApiSuffix + '/documents/:id', 
-    	{id: '@id'},
-    	{
-    		save: {
-    			method: 'POST',
-    			headers: {
-    				'Authorization': 'Bearer',
-    				'Accept': 'application/vnd.gini.v1+json',
-    				'Content-Type': 'multipart/form-data'
-    			}
-    		}
-  		}
-  	);
+   //  this.document = $resource(
+   //  	giniApiSuffix + '/documents/:id', 
+   //  	{id: '@id'},
+   //  	{
+   //  		save: {
+   //  			method: 'POST',
+   //  			headers: {
+   //  				'Authorization': 'Bearer',
+   //  				'Accept': 'application/vnd.gini.v1+json',
+   //  				'Content-Type': 'multipart/form-data'
+   //  			}
+   //  		}
+  	// 	}
+  	// );
     this.documentUpload = function(formdata) {
-    	$http({
+    	return $http({
     		url: giniApiSuffix + '/documents', 
     		method: 'POST', 
     		data: formdata,
@@ -34,6 +34,58 @@ angular.module('foodNinjaApp')
     			'Authorization': 'Bearer',
   				'Accept': 'application/vnd.gini.v1+json',
   				'Content-Type': undefined //'multipart/form-data'
+  			}
+  		});
+    };
+    this.document = function(id) {
+    	return $http({
+    		url: giniApiSuffix + '/documents/' + id, 
+    		method: 'GET', 
+    		// data: formdata,
+    		//transformRequest: angular.identity,
+    		headers: {
+    			'Authorization': 'Bearer',
+  				'Accept': 'application/vnd.gini.v1+json',
+  				//'Content-Type': undefined //'multipart/form-data'
+  			}
+  		});
+    };
+    this.documentLayout = function(id) {
+    	return $http({
+    		url: giniApiSuffix + '/documents/' + id + '/layout', 
+    		method: 'GET', 
+    		//data: formdata,
+    		//transformRequest: angular.identity,
+    		headers: {
+    			'Authorization': 'Bearer',
+  				'Accept': 'application/vnd.gini.v1+json',
+  				//'Content-Type': undefined //'multipart/form-data'
+  			}
+  		});
+    };
+    this.documentProcessed = function(formdata) {
+    	return $http({
+    		url: giniApiSuffix + '/documents/' + id + '/processed', 
+    		method: 'GET', 
+    		//data: formdata,
+    		//transformRequest: angular.identity,
+    		headers: {
+    			'Authorization': 'Bearer',
+  				'Accept': 'application/vnd.gini.v1+json',
+  				//'Content-Type': undefined //'multipart/form-data'
+  			}
+  		});
+    };
+    this.documentExtractions = function(formdata) {
+    	return $http({
+    		url: giniApiSuffix + '/documents/' + id + '/extractions', 
+    		method: 'GET', 
+    		//data: formdata,
+    		//transformRequest: angular.identity,
+    		headers: {
+    			'Authorization': 'Bearer',
+  				'Accept': 'application/vnd.gini.v1+json',
+  				//'Content-Type': undefined //'multipart/form-data'
   			}
   		});
     };

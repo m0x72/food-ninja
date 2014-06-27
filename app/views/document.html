@@ -2,3 +2,19 @@
 <input type="file" fileread="document"/>
 <p>Document: {{document}}</p>
 <button ng-click="uploadDocument()">upload me</button>
+<p>
+	<h3>Document:</h3>
+	<div>Id: {{documentId}}</div>
+	<div>Document: <button ng-click="getDocument()">Get</button>
+		<pre>{{giniDocument}}</pre>
+	</div>
+	<div>DocumentLayout: <button ng-click="getDocumentLayout()">Get</button>
+		<pre>{{giniDocumentLayout}}</pre>
+	</div>
+	<div>DocumentProcessed: <button ng-click="getDocumentProcessed()">Get</button>
+		<pre>{{giniDocumentProcessed}}</pre>
+	</div>
+	<div>DocumentExtractions: <button ng-click="getDocumentExtractions()">Get</button>
+		<pre>{{giniDocumentExtractions}}</pre>
+	</div>
+</p>
