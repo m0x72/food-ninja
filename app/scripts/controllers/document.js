@@ -35,19 +35,19 @@ angular.module('foodNinjaApp')
     	});
     };
     $scope.getDocumentLayout = function() {
-    	Giniapi.document($scope.documentId).success(function(data, status, header, config) {
+    	Giniapi.documentLayout($scope.documentId).success(function(data, status, header, config) {
     		$scope.giniDocumentLayout = data;
     		$scope.giniDocumentLayout = JSON.stringify($scope.giniDocumentLayout, undefined, 2);
     	});
     };
     $scope.getDocumentProcessed = function() {
-    	Giniapi.document($scope.documentId).success(function(data, status, header, config) {
+    	Giniapi.documentProcessed($scope.documentId).success(function(data, status, header, config) {
     		$scope.giniDocumentProcessed = data;
     		$scope.giniDocumentProcessed = JSON.stringify($scope.giniDocumentProcessed, undefined, 2);
     	});
     };
     $scope.getDocumentExtractions = function() {
-    	Giniapi.document($scope.documentId).success(function(data, status, header, config) {
+    	Giniapi.documentExtractions($scope.documentId).success(function(data, status, header, config) {
     		$scope.giniDocumentExtractions = data;
     		$scope.giniDocumentExtractions = JSON.stringify($scope.giniDocumentExtractions, undefined, 2);
     	});
