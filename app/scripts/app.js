@@ -36,6 +36,10 @@ angular
         templateUrl: 'views/authcallback.html',
         controller: 'AuthcallbackCtrl'
       })
+      .when('/document', {
+        templateUrl: 'views/document.html',
+        controller: 'DocumentCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
