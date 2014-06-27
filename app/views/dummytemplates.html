@@ -15,3 +15,12 @@
 		</ul>
 	</li>
 </ul>
+-------------
+<ul>
+	<li ng-repeat="reciept in reciepts">
+		<span>{{reciept.title}}</span>
+		<ul>
+			<li ng-repeat="product in reciept.data">{{product.name}} : {{product.price}}</li>
+		</ul>
+	</li>
+</ul>

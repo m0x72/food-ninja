@@ -36,5 +36,5 @@ angular.module('foodNinjaApp')
     ]
   */
   $scope.reciepts = Reciepts.getReciepts();
-  //console.log($scope.reciepts);
+	console.log($scope.reciepts);
   });
