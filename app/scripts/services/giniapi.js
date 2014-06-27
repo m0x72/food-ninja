@@ -49,6 +49,13 @@ angular.module('foodNinjaApp')
   					'Authorization': 'Bearer',
   					'Accept': 'application/vnd.gini.v1+json',	
   				}
+  			}, 
+  			delete: {
+  				method: 'DELETE',
+  				headers: {
+  					'Authorization': 'Bearer',
+  					'Accept': 'application/vnd.gini.v1+json',	
+  				}
   			},
   			layout: {
   				url: giniApiSuffix + '/documents/:documentId/layout',
@@ -69,6 +76,18 @@ angular.module('foodNinjaApp')
   			}
   		}
   	);
+
+		this.eventSubscription = function() {
+			return new EventSource('https://notifications.gini.net/events/client');
+			// return $http({
+			// 	url: 'https://notifications.gini.net/events/client',
+			// 	method: 'GET',
+			// 	headers: {
+			// 		'Accept': 'text/event-stream',
+			// 		'Authorization': 'Bearer'
+			// 	}
+			// });
+		};
 
     this.documentUpload = function(formdata) {
     	return $http({
