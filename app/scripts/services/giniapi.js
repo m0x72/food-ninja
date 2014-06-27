@@ -45,7 +45,7 @@ angular.module('foodNinjaApp')
     		//transformRequest: angular.identity,
     		headers: {
     			'Authorization': 'Bearer',
-  				'Accept': 'application/vnd.gini.incubator+json',
+  				'Accept': 'application/vnd.gini.v1+json',
   				//'Content-Type': undefined //'multipart/form-data'
   			}
   		});
@@ -58,7 +58,7 @@ angular.module('foodNinjaApp')
     		//transformRequest: angular.identity,
     		headers: {
     			'Authorization': 'Bearer',
-  				'Accept': 'application/vnd.gini.incubator+json',
+  				'Accept': 'application/vnd.gini.v1+json',
   				//'Content-Type': undefined //'multipart/form-data'
   			}
   		});
@@ -71,7 +71,7 @@ angular.module('foodNinjaApp')
     		//transformRequest: angular.identity,
     		headers: {
     			'Authorization': 'Bearer',
-  				'Accept': 'application/vnd.gini.incubator+json',
+  				'Accept': 'application/pdf',	//application/pdf
   				//'Content-Type': undefined //'multipart/form-data'
   			}
   		});

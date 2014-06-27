@@ -40,6 +40,14 @@ angular
         templateUrl: 'views/document.html',
         controller: 'DocumentCtrl'
       })
+      .when('/dataparser', {
+        templateUrl: 'views/dataparser.html',
+        controller: 'DataparserCtrl'
+      })
+      .when('/dummytemplates', {
+        templateUrl: 'views/dummytemplates.html',
+        controller: 'DummytemplatesCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
