@@ -3,7 +3,7 @@
 <input type="file" fileread="file"/>
 <button ng-click="uploadDocument()">upload document</button>
 <p ng-show="document">Document: <pre>{{document}}</pre></p>
-<p ng-show="!!reciept">
+<p ng-show="reciept">
 	<h3>Your parsed reciept: </h3>
 	<label for="title">Reciept name: </label>
 	<input name="title" ng-model="reciept.title">

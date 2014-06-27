@@ -1,26 +1,22 @@
-<table class="table">
-	<tr>
-		<th>Name</th>
-		<th>Price</th>
-	</tr>
-	<tr ng-repeat="product in products">
-		<td>{{product.name}}</td>
-		<td>{{product.price}}</td>
-	</tr>
-</table>
-<ul>
-	<li ng-repeat="reciept in reciepts">
-		<ul>
-			<li ng-repeat="product in reciept">{{product.name}}:{{product.price}}</li>
-		</ul>
-	</li>
-</ul>
--------------
-<ul>
-	<li ng-repeat="reciept in reciepts">
-		<span>{{reciept.title}}</span>
-		<ul>
-			<li ng-repeat="product in reciept.data">{{product.name}} : {{product.price}}</li>
-		</ul>
-	</li>
-</ul>
+<div class="panel panel-default" ng-repeat="(timestamp, reciept) in reciepts">
+	<div class="panel-heading">
+		<h4 style="display:inline-block;">{{reciept.title}}</h4>
+		<span class="date pull-right">{{timestamp | date:'dd.MM.yyyy HH:mm'}}</span>
+	</div>
+	<div class="panel-body">
+		<table class="table">
+		  <thead>
+		  	<tr>
+		  		<th>Name</th>
+		  		<th>Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="product in reciept.data">
+					<td>{{product.name}}</td>
+					<td>{{product.price}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
