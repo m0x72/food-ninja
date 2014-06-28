@@ -1,6 +1,30 @@
-<p>This is the upload view.</p>
-<p>State: {{state}}</p>
-<input type="file" fileread="file"/>
-<button ng-click="uploadDocument()">upload document</button>
+<h4>Scan your reciept!</h4>
+<p>Submit your grocerie reciepts and let the ninja help you!</p>
+
+<div class="form-group">
+  <label for="inputFile">Reciept input</label>
+  <input type="file" id="inputFile" fileread="file">
+  <p class="help-block">Take a picture with your camera or upload an existing image.</p>
+</div>
+<button type="button" class="btn btn-primary" ng-click="uploadDocument()">Upload now!</button>
+<a ng-show="recieptId" ng-href="#/reciept/{{recieptId}}" ><button type="button" class="btn btn-success">Go to your reciept...</button></a>
+
+<div style="height:20px"></div>
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    State: {{state}}
+  </div>
+</div>
+
+
+
+
 <p ng-show="document">Document: <pre>{{document}}</pre></p>
-<p>Reciepts: <pre>{{reciepts}}</pre></p>
+<p ng-show="reciept">
+	<h4>Your parsed reciept: </h4>
+	<label for="title">Reciept name: </label>
+	<input name="title" ng-model="reciept.title">
+	<button ng-click="updateReciept(recieptId, reciept)">Update Reciept</button>
+	<pre>{{reciept.products}}</pre>
+</p>

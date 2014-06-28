@@ -51,12 +51,17 @@ angular.module('foodNinjaApp')
     var processToReciept = function(data) {
     	return Documents.getDocumentLayout(data.id).$promise.then(function(data) {
     		console.log('doc layout', data);
-	    	Reciepts.addReciept(Reciepts.parseReciept(data));
-	    	$scope.reciepts = Reciepts.getReciepts();	
+	    	$scope.recieptId = Reciepts.addReciept('no title', Reciepts.parseReciept(data));
+	    	$scope.reciept = Reciepts.getReciept($scope.recieptId);
     	}, function(error) {
     		$scope.state = "error retrieving doc layout";
     		throw Error("error retrieving doc layout");
     	});
     }
+
+    $scope.updateReciept = function(id, reciept) {
+    	console.log('updateReciept', id, reciept);
+    	Reciepts.updateReciept(id, reciept);
+    };
 
   });

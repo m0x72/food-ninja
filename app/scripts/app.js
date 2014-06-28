@@ -56,6 +56,14 @@ angular
         templateUrl: 'views/upload.html',
         controller: 'UploadCtrl'
       })
+      .when('/reciept/:id', {
+        templateUrl: 'views/reciept.html',
+        controller: 'RecieptCtrl'
+      })
+      .when('/reciepts', {
+        templateUrl: 'views/reciepts.html',
+        controller: 'RecieptsCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

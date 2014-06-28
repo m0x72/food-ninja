@@ -1,0 +1,25 @@
+<div class="panel panel-default">
+	
+	<div class="panel-heading">
+		<a ng-href="#/reciept/{{recieptId}}">
+			<h4 style="display:inline-block;">{{reciept.title || "- no title -"}}</h4>
+		</a>
+		<span class="date pull-right">{{recieptId | date:'dd.MM.yyyy HH:mm'}}</span>
+	</div>
+	<div class="panel-body">
+		<table class="table">
+		  <thead>
+		  	<tr>
+		  		<th>Name</th>
+		  		<th>Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="product in reciept.products">
+					<td>{{product.name}}</td>
+					<td>{{product.price}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

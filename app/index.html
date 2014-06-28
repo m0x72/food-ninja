@@ -24,11 +24,11 @@
       <div class="header">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/documents">Docs</a></li>
           <li><a ng-href="#/upload">Upload</a></li>
+          <li><a ng-href="#/reciepts">Reciepts</a></li>
+          <li><a ng-href="#/documents">Docs</a></li>
           <li><a ng-href="#/auth">Auth</a></li>
           <li><a ng-href="#/dataparser">Parser</a></li>
-          <li><a ng-href="#/dummytemplates">Templates</a></li>
         </ul>
         <h3 class="text-muted">foodNinja</h3>
       </div>
@@ -36,7 +36,7 @@
       <div ng-view=""></div>
 
       <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <p>With <span class="glyphicon glyphicon-heart"></span> from Munich</p>
       </div>
     </div>
 
@@ -90,6 +90,9 @@
         <script src="scripts/services/documents.js"></script>
         <script src="scripts/controllers/documents.js"></script>
         <script src="scripts/controllers/upload.js"></script>
+        <script src="scripts/controllers/reciept.js"></script>
+        <script src="scripts/directives/reciept.js"></script>
+        <script src="scripts/controllers/reciepts.js"></script>
         <!-- endbuild -->
 </body>
 </html>

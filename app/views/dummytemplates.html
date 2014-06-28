@@ -1,17 +1,1 @@
-<table class="table">
-	<tr>
-		<th>Name</th>
-		<th>Price</th>
-	</tr>
-	<tr ng-repeat="product in products">
-		<td>{{product.name}}</td>
-		<td>{{product.price}}</td>
-	</tr>
-</table>
-<ul>
-	<li ng-repeat="reciept in reciepts">
-		<ul>
-			<li ng-repeat="product in reciept">{{product.name}}:{{product.price}}</li>
-		</ul>
-	</li>
-</ul>
+<reciept reciept="reciept" reciept-id="timestamp" ng-repeat="(timestamp, reciept) in reciepts" ></reciept>
