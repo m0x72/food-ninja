@@ -3842,7 +3842,7 @@ angular.module('foodNinjaApp')
 		    }
 		  ]
 		};
-	this.data2 = {
+	this.data = {
     "pages": [{
         "textZones": [{
             "paragraphs": [{
@@ -5416,7 +5416,7 @@ angular.module('foodNinjaApp')
     }]
 }
 
-this.data2 = {
+this.data = {
     "pages": [{
         "textZones": [{
             "paragraphs": [{
@@ -6609,7 +6609,7 @@ this.data2 = {
     }]
 }
 
-this.data2 = {
+this.data = {
     "pages": [{
         "textZones": [{
             "paragraphs": [{
@@ -9801,7 +9801,7 @@ this.data2 = {
     }]
 }
 
-this.data2 = {
+this.data = {
     "pages": [{
         "textZones": [{
             "paragraphs": [{
@@ -11960,6 +11960,1508 @@ this.data2 = {
         "number": 1,
         "sizeX": 491.446167,
         "sizeY": 662.584595
+    }]
+}
+
+this.data = {
+    "pages": [{
+        "textZones": [{
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "***",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 5.0,
+                        "l": 37.0,
+                        "w": 11.0,
+                        "h": 5.0,
+                        "bold": false
+                    }, {
+                        "text": "PENNY-MARKT",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 4.0,
+                        "l": 52.0,
+                        "w": 42.0,
+                        "h": 6.0,
+                        "bold": false
+                    }, {
+                        "text": "GMBH",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 4.0,
+                        "l": 99.0,
+                        "w": 15.0,
+                        "h": 6.0,
+                        "bold": false
+                    }, {
+                        "text": "***",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 5.0,
+                        "l": 118.0,
+                        "w": 11.0,
+                        "h": 5.0,
+                        "bold": false
+                    }],
+                    "t": 4.475676,
+                    "l": 37.167568,
+                    "w": 92.432434,
+                    "h": 6.421621
+                }],
+                "t": 4.475676,
+                "l": 37.167568,
+                "w": 92.432434,
+                "h": 6.421621
+            }, {
+                "lines": [{
+                    "wds": [{
+                        "text": "GUARDINISTR,",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 14.0,
+                        "l": 52.0,
+                        "w": 45.0,
+                        "h": 6.0,
+                        "bold": false
+                    }, {
+                        "text": "92",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 14.0,
+                        "l": 103.0,
+                        "w": 7.0,
+                        "h": 6.0,
+                        "bold": false
+                    }],
+                    "t": 14.010811,
+                    "l": 52.735134,
+                    "w": 57.405407,
+                    "h": 6.616216
+                }],
+                "t": 14.010811,
+                "l": 52.735134,
+                "w": 57.405407,
+                "h": 6.616216
+            }, {
+                "lines": [{
+                    "wds": [{
+                        "text": "81375",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 23.0,
+                        "l": 56.0,
+                        "w": 19.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "MÜNCHEN",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 23.0,
+                        "l": 79.0,
+                        "w": 27.0,
+                        "h": 7.0,
+                        "bold": false
+                    }],
+                    "t": 23.156757,
+                    "l": 56.627029,
+                    "w": 49.62162,
+                    "h": 7.005405
+                }],
+                "t": 23.156757,
+                "l": 56.627029,
+                "w": 49.62162,
+                "h": 7.005405
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "Steuer.",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 52.0,
+                        "l": 33.0,
+                        "w": 25.0,
+                        "h": 6.0,
+                        "bold": false
+                    }, {
+                        "text": "Nr.:",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 52.0,
+                        "l": 60.0,
+                        "w": 14.0,
+                        "h": 6.0,
+                        "bold": false
+                    }, {
+                        "text": "215/5940/2539",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 51.0,
+                        "l": 79.0,
+                        "w": 50.0,
+                        "h": 8.0,
+                        "bold": false
+                    }],
+                    "t": 51.956757,
+                    "l": 33.081081,
+                    "w": 96.324326,
+                    "h": 7.589189
+                }],
+                "t": 51.956757,
+                "l": 33.081081,
+                "w": 96.324326,
+                "h": 7.589189
+            }, {
+                "lines": [{
+                    "wds": [{
+                        "text": "UID",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 61.0,
+                        "l": 44.0,
+                        "w": 11.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "Nr.:",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 61.0,
+                        "l": 60.0,
+                        "w": 14.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "DE2027481",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 61.0,
+                        "l": 79.0,
+                        "w": 33.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "17",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 61.0,
+                        "l": 115.0,
+                        "w": 6.0,
+                        "h": 7.0,
+                        "bold": false
+                    }],
+                    "t": 61.686485,
+                    "l": 44.756756,
+                    "w": 76.670273,
+                    "h": 6.616216
+                }],
+                "t": 61.686485,
+                "l": 44.756756,
+                "w": 76.670273,
+                "h": 6.616216
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "EUR",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 80.0,
+                        "l": 137.0,
+                        "w": 11.0,
+                        "h": 7.0,
+                        "bold": false
+                    }],
+                    "t": 80.75676,
+                    "l": 137.967575,
+                    "w": 10.702703,
+                    "h": 6.616216
+                }],
+                "t": 80.75676,
+                "l": 137.967575,
+                "w": 10.702703,
+                "h": 6.616216
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "Chiquita",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 90.0,
+                        "l": 9.0,
+                        "w": 30.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "Banane",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 90.0,
+                        "l": 44.0,
+                        "w": 23.0,
+                        "h": 7.0,
+                        "bold": false
+                    }],
+                    "t": 90.291893,
+                    "l": 9.535135,
+                    "w": 57.600002,
+                    "h": 7.589189
+                }],
+                "t": 90.291893,
+                "l": 9.535135,
+                "w": 57.600002,
+                "h": 7.589189
+            }, {
+                "lines": [{
+                    "wds": [{
+                        "text": "0,690",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 100.0,
+                        "l": 17.0,
+                        "w": 19.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "kg",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 99.0,
+                        "l": 40.0,
+                        "w": 7.0,
+                        "h": 8.0,
+                        "bold": false
+                    }, {
+                        "text": "x",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 101.0,
+                        "l": 52.0,
+                        "w": 3.0,
+                        "h": 5.0,
+                        "bold": false
+                    }],
+                    "t": 99.827026,
+                    "l": 17.318918,
+                    "w": 38.335136,
+                    "h": 7.783784
+                }],
+                "t": 99.827026,
+                "l": 17.318918,
+                "w": 38.335136,
+                "h": 7.783784
+            }, {
+                "lines": [{
+                    "wds": [{
+                        "text": "NUSSKNACKER",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 109.0,
+                        "l": 9.0,
+                        "w": 42.0,
+                        "h": 7.0,
+                        "bold": false
+                    }],
+                    "t": 109.75135,
+                    "l": 9.924325,
+                    "w": 41.837837,
+                    "h": 6.421621
+                }],
+                "t": 109.75135,
+                "l": 9.924325,
+                "w": 41.837837,
+                "h": 6.421621
+            }, {
+                "lines": [{
+                    "wds": [{
+                        "text": "Mister",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 119.0,
+                        "l": 9.0,
+                        "w": 23.0,
+                        "h": 6.0,
+                        "bold": false
+                    }, {
+                        "text": "Tom",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 119.0,
+                        "l": 36.0,
+                        "w": 11.0,
+                        "h": 6.0,
+                        "bold": false
+                    }],
+                    "t": 119.091888,
+                    "l": 9.535135,
+                    "w": 38.140541,
+                    "h": 6.616216
+                }],
+                "t": 119.091888,
+                "l": 9.535135,
+                "w": 38.140541,
+                "h": 6.616216
+            }, {
+                "lines": [{
+                    "wds": [{
+                        "text": "ZIMT",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 128.0,
+                        "l": 9.0,
+                        "w": 15.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "GEMAHLEN",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 128.0,
+                        "l": 28.0,
+                        "w": 31.0,
+                        "h": 7.0,
+                        "bold": false
+                    }],
+                    "t": 128.627029,
+                    "l": 9.535135,
+                    "w": 49.62162,
+                    "h": 6.616216
+                }],
+                "t": 128.627029,
+                "l": 9.535135,
+                "w": 49.62162,
+                "h": 6.616216
+            }, {
+                "lines": [{
+                    "wds": [{
+                        "text": "Weihenst.",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 137.0,
+                        "l": 9.0,
+                        "w": 33.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "Milch",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 137.0,
+                        "l": 48.0,
+                        "w": 18.0,
+                        "h": 7.0,
+                        "bold": false
+                    }],
+                    "t": 137.77298,
+                    "l": 9.340541,
+                    "w": 57.600002,
+                    "h": 7.005405
+                }],
+                "t": 137.77298,
+                "l": 9.340541,
+                "w": 57.600002,
+                "h": 7.005405
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "1,49",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 100.0,
+                        "l": 68.0,
+                        "w": 14.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "EUR/kg",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 99.0,
+                        "l": 87.0,
+                        "w": 22.0,
+                        "h": 8.0,
+                        "bold": false
+                    }],
+                    "t": 99.632431,
+                    "l": 68.497299,
+                    "w": 41.448647,
+                    "h": 7.783784
+                }],
+                "t": 99.632431,
+                "l": 68.497299,
+                "w": 41.448647,
+                "h": 7.783784
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "1,03",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 99.0,
+                        "l": 134.0,
+                        "w": 14.0,
+                        "h": 8.0,
+                        "bold": false
+                    }, {
+                        "text": "B",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 100.0,
+                        "l": 153.0,
+                        "w": 3.0,
+                        "h": 6.0,
+                        "bold": false
+                    }],
+                    "t": 99.827026,
+                    "l": 134.270264,
+                    "w": 21.989189,
+                    "h": 7.589189
+                }],
+                "t": 99.827026,
+                "l": 134.270264,
+                "w": 21.989189,
+                "h": 7.589189
+            }, {
+                "lines": [{
+                    "wds": [{
+                        "text": "1,49",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 109.0,
+                        "l": 134.0,
+                        "w": 14.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "B",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 109.0,
+                        "l": 152.0,
+                        "w": 4.0,
+                        "h": 6.0,
+                        "bold": false
+                    }],
+                    "t": 109.556755,
+                    "l": 134.270264,
+                    "w": 21.989189,
+                    "h": 7.394594
+                }],
+                "t": 109.556755,
+                "l": 134.270264,
+                "w": 21.989189,
+                "h": 7.394594
+            }, {
+                "lines": [{
+                    "wds": [{
+                        "text": "0,59",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 119.0,
+                        "l": 133.0,
+                        "w": 15.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "B",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 119.0,
+                        "l": 152.0,
+                        "w": 4.0,
+                        "h": 6.0,
+                        "bold": false
+                    }],
+                    "t": 119.091888,
+                    "l": 133.686493,
+                    "w": 22.378378,
+                    "h": 7.394594
+                }],
+                "t": 119.091888,
+                "l": 133.686493,
+                "w": 22.378378,
+                "h": 7.394594
+            }, {
+                "lines": [{
+                    "wds": [{
+                        "text": "0,69",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 128.0,
+                        "l": 133.0,
+                        "w": 15.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "B",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 128.0,
+                        "l": 152.0,
+                        "w": 4.0,
+                        "h": 7.0,
+                        "bold": false
+                    }],
+                    "t": 128.627029,
+                    "l": 133.686493,
+                    "w": 22.378378,
+                    "h": 7.2
+                }],
+                "t": 128.627029,
+                "l": 133.686493,
+                "w": 22.378378,
+                "h": 7.2
+            }, {
+                "lines": [{
+                    "wds": [{
+                        "text": "2,38",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 137.0,
+                        "l": 133.0,
+                        "w": 15.0,
+                        "h": 8.0,
+                        "bold": false
+                    }, {
+                        "text": "B",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 138.0,
+                        "l": 152.0,
+                        "w": 4.0,
+                        "h": 6.0,
+                        "bold": false
+                    }],
+                    "t": 137.967575,
+                    "l": 133.491898,
+                    "w": 22.572973,
+                    "h": 7.394594
+                }],
+                "t": 137.967575,
+                "l": 133.491898,
+                "w": 22.572973,
+                "h": 7.394594
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "2",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 147.0,
+                        "l": 25.0,
+                        "w": 3.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "x",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 149.0,
+                        "l": 32.0,
+                        "w": 4.0,
+                        "h": 5.0,
+                        "bold": false
+                    }],
+                    "t": 147.697296,
+                    "l": 25.102701,
+                    "w": 10.897297,
+                    "h": 6.421621
+                }],
+                "t": 147.697296,
+                "l": 25.102701,
+                "w": 10.897297,
+                "h": 6.421621
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "1,19",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 147.0,
+                        "l": 56.0,
+                        "w": 14.0,
+                        "h": 7.0,
+                        "bold": false
+                    }],
+                    "t": 147.502701,
+                    "l": 56.821621,
+                    "w": 14.010811,
+                    "h": 7.394594
+                }],
+                "t": 147.502701,
+                "l": 56.821621,
+                "w": 14.010811,
+                "h": 7.394594
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "PENNY",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 157.0,
+                        "l": 9.0,
+                        "w": 19.0,
+                        "h": 6.0,
+                        "bold": false
+                    }, {
+                        "text": "Naturjoghu",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 156.0,
+                        "l": 33.0,
+                        "w": 37.0,
+                        "h": 8.0,
+                        "bold": false
+                    }],
+                    "t": 156.843246,
+                    "l": 9.535135,
+                    "w": 61.297298,
+                    "h": 7.589189
+                }],
+                "t": 156.843246,
+                "l": 9.535135,
+                "w": 61.297298,
+                "h": 7.589189
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "0,49",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 157.0,
+                        "l": 133.0,
+                        "w": 15.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "B",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 157.0,
+                        "l": 152.0,
+                        "w": 4.0,
+                        "h": 6.0,
+                        "bold": false
+                    }],
+                    "t": 157.037842,
+                    "l": 133.491898,
+                    "w": 22.572973,
+                    "h": 7.2
+                }],
+                "t": 157.037842,
+                "l": 133.491898,
+                "w": 22.572973,
+                "h": 7.2
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "6,67",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 176.0,
+                        "l": 133.0,
+                        "w": 15.0,
+                        "h": 7.0,
+                        "bold": false
+                    }],
+                    "t": 176.108109,
+                    "l": 133.491898,
+                    "w": 15.178378,
+                    "h": 7.589189
+                }],
+                "t": 176.108109,
+                "l": 133.491898,
+                "w": 15.178378,
+                "h": 7.589189
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "SUMME",
+                        "fontSize": 8.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 176.0,
+                        "l": 9.0,
+                        "w": 19.0,
+                        "h": 6.0,
+                        "bold": false
+                    }],
+                    "t": 176.302704,
+                    "l": 9.340541,
+                    "w": 19.070271,
+                    "h": 6.421621
+                }],
+                "t": 176.302704,
+                "l": 9.340541,
+                "w": 19.070271,
+                "h": 6.421621
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "EUR",
+                        "fontSize": 8.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 176.0,
+                        "l": 99.0,
+                        "w": 10.0,
+                        "h": 6.0,
+                        "bold": false
+                    }],
+                    "t": 176.302704,
+                    "l": 99.048645,
+                    "w": 10.897297,
+                    "h": 6.421621
+                }],
+                "t": 176.302704,
+                "l": 99.048645,
+                "w": 10.897297,
+                "h": 6.421621
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "7,00",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 195.0,
+                        "l": 133.0,
+                        "w": 15.0,
+                        "h": 7.0,
+                        "bold": false
+                    }],
+                    "t": 195.178391,
+                    "l": 133.491898,
+                    "w": 14.983784,
+                    "h": 7.394594
+                }],
+                "t": 195.178391,
+                "l": 133.491898,
+                "w": 14.983784,
+                "h": 7.394594
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "BAR",
+                        "fontSize": 8.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 195.0,
+                        "l": 9.0,
+                        "w": 11.0,
+                        "h": 6.0,
+                        "bold": false
+                    }],
+                    "t": 195.567581,
+                    "l": 9.340541,
+                    "w": 11.286487,
+                    "h": 6.421621
+                }],
+                "t": 195.567581,
+                "l": 9.340541,
+                "w": 11.286487,
+                "h": 6.421621
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "EUR",
+                        "fontSize": 8.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 195.0,
+                        "l": 98.0,
+                        "w": 11.0,
+                        "h": 6.0,
+                        "bold": false
+                    }],
+                    "t": 195.372986,
+                    "l": 98.85405,
+                    "w": 10.897297,
+                    "h": 6.421621
+                }],
+                "t": 195.372986,
+                "l": 98.85405,
+                "w": 10.897297,
+                "h": 6.421621
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "Rückgeld",
+                        "fontSize": 8.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 204.0,
+                        "l": 9.0,
+                        "w": 30.0,
+                        "h": 8.0,
+                        "bold": false
+                    }, {
+                        "text": "BAR",
+                        "fontSize": 8.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 204.0,
+                        "l": 44.0,
+                        "w": 11.0,
+                        "h": 7.0,
+                        "bold": false
+                    }],
+                    "t": 204.713516,
+                    "l": 9.340541,
+                    "w": 46.118919,
+                    "h": 7.589189
+                }],
+                "t": 204.713516,
+                "l": 9.340541,
+                "w": 46.118919,
+                "h": 7.589189
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "EUR",
+                        "fontSize": 8.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 204.0,
+                        "l": 98.0,
+                        "w": 11.0,
+                        "h": 7.0,
+                        "bold": false
+                    }],
+                    "t": 204.908096,
+                    "l": 98.85405,
+                    "w": 10.897297,
+                    "h": 6.227027
+                }],
+                "t": 204.908096,
+                "l": 98.85405,
+                "w": 10.897297,
+                "h": 6.227027
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "0,33",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 204.0,
+                        "l": 133.0,
+                        "w": 15.0,
+                        "h": 7.0,
+                        "bold": false
+                    }],
+                    "t": 204.713516,
+                    "l": 133.297302,
+                    "w": 15.178378,
+                    "h": 7.2
+                }],
+                "t": 204.713516,
+                "l": 133.297302,
+                "w": 15.178378,
+                "h": 7.2
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "Netto",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 223.0,
+                        "l": 71.0,
+                        "w": 19.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "Steuer",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 223.0,
+                        "l": 98.0,
+                        "w": 23.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "Brutto",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 223.0,
+                        "l": 133.0,
+                        "w": 22.0,
+                        "h": 7.0,
+                        "bold": false
+                    }],
+                    "t": 223.394592,
+                    "l": 71.610809,
+                    "w": 84.25946,
+                    "h": 6.616216
+                }],
+                "t": 223.394592,
+                "l": 71.610809,
+                "w": 84.25946,
+                "h": 6.616216
+            }, {
+                "lines": [{
+                    "wds": [{
+                        "text": "6,23",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 232.0,
+                        "l": 75.0,
+                        "w": 14.0,
+                        "h": 8.0,
+                        "bold": false
+                    }, {
+                        "text": "0,44",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 232.0,
+                        "l": 106.0,
+                        "w": 15.0,
+                        "h": 8.0,
+                        "bold": false
+                    }, {
+                        "text": "6,67",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 232.0,
+                        "l": 141.0,
+                        "w": 14.0,
+                        "h": 8.0,
+                        "bold": false
+                    }],
+                    "t": 232.929718,
+                    "l": 75.113518,
+                    "w": 80.75676,
+                    "h": 7.589189
+                }],
+                "t": 232.929718,
+                "l": 75.113518,
+                "w": 80.75676,
+                "h": 7.589189
+            }, {
+                "lines": [{
+                    "wds": [{
+                        "text": "6,23",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 242.0,
+                        "l": 75.0,
+                        "w": 14.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "0,44",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 242.0,
+                        "l": 106.0,
+                        "w": 15.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "6,67",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 242.0,
+                        "l": 140.0,
+                        "w": 15.0,
+                        "h": 7.0,
+                        "bold": false
+                    }],
+                    "t": 242.464859,
+                    "l": 75.113518,
+                    "w": 80.75676,
+                    "h": 7.394594
+                }],
+                "t": 242.464859,
+                "l": 75.113518,
+                "w": 80.75676,
+                "h": 7.394594
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "Steuer",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 223.0,
+                        "l": 9.0,
+                        "w": 22.0,
+                        "h": 7.0,
+                        "bold": false
+                    }],
+                    "t": 223.589188,
+                    "l": 9.145946,
+                    "w": 22.767569,
+                    "h": 6.421621
+                }],
+                "t": 223.589188,
+                "l": 9.145946,
+                "w": 22.767569,
+                "h": 6.421621
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "7,0%",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 232.0,
+                        "l": 40.0,
+                        "w": 15.0,
+                        "h": 8.0,
+                        "bold": false
+                    }],
+                    "t": 232.929718,
+                    "l": 40.281082,
+                    "w": 14.789188,
+                    "h": 7.589189
+                }],
+                "t": 232.929718,
+                "l": 40.281082,
+                "w": 14.789188,
+                "h": 7.589189
+            }, {
+                "lines": [{
+                    "wds": [{
+                        "text": "Gesamtbetrag",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 242.0,
+                        "l": 9.0,
+                        "w": 46.0,
+                        "h": 8.0,
+                        "bold": false
+                    }],
+                    "t": 242.270264,
+                    "l": 9.145946,
+                    "w": 45.924324,
+                    "h": 7.783784
+                }],
+                "t": 242.270264,
+                "l": 9.145946,
+                "w": 45.924324,
+                "h": 7.783784
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "B",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 232.0,
+                        "l": 9.0,
+                        "w": 3.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "=",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 235.0,
+                        "l": 16.0,
+                        "w": 4.0,
+                        "h": 2.0,
+                        "bold": false
+                    }],
+                    "t": 232.929718,
+                    "l": 9.145946,
+                    "w": 11.091892,
+                    "h": 6.616216
+                }],
+                "t": 232.929718,
+                "l": 9.145946,
+                "w": 11.091892,
+                "h": 6.616216
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "07:52",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 261.0,
+                        "l": 71.0,
+                        "w": 18.0,
+                        "h": 7.0,
+                        "bold": false
+                    }],
+                    "t": 261.535126,
+                    "l": 71.221626,
+                    "w": 18.681082,
+                    "h": 6.810811
+                }],
+                "t": 261.535126,
+                "l": 71.221626,
+                "w": 18.681082,
+                "h": 6.810811
+            }, {
+                "lines": [{
+                    "wds": [{
+                        "text": "Kasse",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 271.0,
+                        "l": 71.0,
+                        "w": 18.0,
+                        "h": 6.0,
+                        "bold": false
+                    }, {
+                        "text": ":",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 273.0,
+                        "l": 91.0,
+                        "w": 1.0,
+                        "h": 4.0,
+                        "bold": false
+                    }, {
+                        "text": "1",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 271.0,
+                        "l": 94.0,
+                        "w": 2.0,
+                        "h": 6.0,
+                        "bold": false
+                    }],
+                    "t": 271.264862,
+                    "l": 71.027031,
+                    "w": 25.686485,
+                    "h": 6.421621
+                }],
+                "t": 271.264862,
+                "l": 71.027031,
+                "w": 25.686485,
+                "h": 6.421621
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "Bon-Nr.",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 261.0,
+                        "l": 109.0,
+                        "w": 26.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": ":7714",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 261.0,
+                        "l": 138.0,
+                        "w": 18.0,
+                        "h": 7.0,
+                        "bold": false
+                    }],
+                    "t": 261.535126,
+                    "l": 109.945946,
+                    "w": 46.118919,
+                    "h": 6.616216
+                }],
+                "t": 261.535126,
+                "l": 109.945946,
+                "w": 46.118919,
+                "h": 6.616216
+            }, {
+                "lines": [{
+                    "wds": [{
+                        "text": "Bed.:",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 271.0,
+                        "l": 109.0,
+                        "w": 18.0,
+                        "h": 6.0,
+                        "bold": false
+                    }, {
+                        "text": "343434",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 271.0,
+                        "l": 129.0,
+                        "w": 22.0,
+                        "h": 6.0,
+                        "bold": false
+                    }],
+                    "t": 271.070282,
+                    "l": 109.945946,
+                    "w": 42.032433,
+                    "h": 6.616216
+                }],
+                "t": 271.070282,
+                "l": 109.945946,
+                "w": 42.032433,
+                "h": 6.616216
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "23.06.2014",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 261.0,
+                        "l": 13.0,
+                        "w": 38.0,
+                        "h": 7.0,
+                        "bold": false
+                    }],
+                    "t": 261.729736,
+                    "l": 13.037838,
+                    "w": 38.529732,
+                    "h": 6.616216
+                }],
+                "t": 261.729736,
+                "l": 13.037838,
+                "w": 38.529732,
+                "h": 6.616216
+            }, {
+                "lines": [{
+                    "wds": [{
+                        "text": "Markt:",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 271.0,
+                        "l": 13.0,
+                        "w": 21.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "01",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 271.0,
+                        "l": 36.0,
+                        "w": 6.0,
+                        "h": 6.0,
+                        "bold": false
+                    }, {
+                        "text": "98",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 271.0,
+                        "l": 43.0,
+                        "w": 8.0,
+                        "h": 6.0,
+                        "bold": false
+                    }],
+                    "t": 271.264862,
+                    "l": 13.037838,
+                    "w": 38.140541,
+                    "h": 6.810811
+                }],
+                "t": 271.264862,
+                "l": 13.037838,
+                "w": 38.140541,
+                "h": 6.810811
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "Wir",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 299.0,
+                        "l": 24.0,
+                        "w": 11.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "danken",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 299.0,
+                        "l": 40.0,
+                        "w": 22.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "für",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 299.0,
+                        "l": 67.0,
+                        "w": 11.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "Ihren",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 299.0,
+                        "l": 83.0,
+                        "w": 18.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "Einkauf.",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 299.0,
+                        "l": 106.0,
+                        "w": 29.0,
+                        "h": 7.0,
+                        "bold": false
+                    }],
+                    "t": 299.286499,
+                    "l": 24.518917,
+                    "w": 110.724327,
+                    "h": 7.005405
+                }],
+                "t": 299.286499,
+                "l": 24.518917,
+                "w": 110.724327,
+                "h": 7.005405
+            }]
+        }, {
+            "paragraphs": [{
+                "lines": [{
+                    "wds": [{
+                        "text": "Erstmal",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 318.0,
+                        "l": 51.0,
+                        "w": 26.0,
+                        "h": 7.0,
+                        "bold": false
+                    }, {
+                        "text": "zu",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 320.0,
+                        "l": 82.0,
+                        "w": 7.0,
+                        "h": 5.0,
+                        "bold": false
+                    }, {
+                        "text": "Penny",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 318.0,
+                        "l": 94.0,
+                        "w": 18.0,
+                        "h": 8.0,
+                        "bold": false
+                    }],
+                    "t": 318.356781,
+                    "l": 51.956757,
+                    "w": 60.908108,
+                    "h": 7.783784
+                }],
+                "t": 318.356781,
+                "l": 51.956757,
+                "w": 60.908108,
+                "h": 7.783784
+            }, {
+                "lines": [{
+                    "wds": [{
+                        "text": "-",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 331.0,
+                        "l": 9.0,
+                        "w": 2.0,
+                        "h": 1.0,
+                        "bold": false
+                    }, {
+                        "text": "auch",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 328.0,
+                        "l": 16.0,
+                        "w": 15.0,
+                        "h": 6.0,
+                        "bold": false
+                    }, {
+                        "text": "im",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 328.0,
+                        "l": 36.0,
+                        "w": 7.0,
+                        "h": 6.0,
+                        "bold": false
+                    }, {
+                        "text": "Internet",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 328.0,
+                        "l": 48.0,
+                        "w": 29.0,
+                        "h": 6.0,
+                        "bold": false
+                    }, {
+                        "text": "unter",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 328.0,
+                        "l": 82.0,
+                        "w": 19.0,
+                        "h": 6.0,
+                        "bold": false
+                    }, {
+                        "text": "www.penny.de",
+                        "fontSize": 7.0,
+                        "fontFamily": "Default Metrics Font",
+                        "t": 327.0,
+                        "l": 105.0,
+                        "w": 46.0,
+                        "h": 8.0,
+                        "bold": false
+                    }],
+                    "t": 327.891907,
+                    "l": 9.340541,
+                    "w": 142.248657,
+                    "h": 7.783784
+                }],
+                "t": 327.891907,
+                "l": 9.340541,
+                "w": 142.248657,
+                "h": 7.783784
+            }]
+        }],
+        "number": 1,
+        "sizeX": 182.529724,
+        "sizeY": 356.886475
     }]
 }
 

@@ -97,6 +97,7 @@ var getWordsByLine = function(lines) {
         words += ' ' + word.text;
       }
     }
+    words = words.trim();
     ws.push(words);
   }
   return ws;
@@ -112,10 +113,38 @@ var getProducts = function(words_by_line) {
   for (var wd_idx in words_by_line) {
 
     var str = words_by_line[wd_idx];
+    console.log("str", str);
 
-    //get price
     var price = "";
     var name = "";
+
+    //strip numbers at the beginning
+    var init_nr = /^[0-9]*\s+/.exec(str);
+    if(null != init_nr) {
+      str = str.substring(init_nr[0].length);
+    }
+
+    //get price v2
+    var price_match = /\s([0-9]+,[0-9]+)\s*(A|B|EUR)*$/i.exec(str);
+    if(null != price_match) {
+      price = price_match[1];
+      str = str.substring(0,price_match.index);
+      name = str;
+
+      if(name != "") {
+      //after Summe, there are no products bought to consider anymore
+      //* Zu zahlen   LIDL Kassenbon
+        var product = {
+        "name" : name,
+        "price": price
+      };
+        prods.push(product);
+        if(null != /(summe|zahlen)/gi.exec(name))
+          return prods;
+      }
+    }
+/*
+    //get price v1
     var price_match = /\s[0-9]+,[0-9]+\s/i.exec(str);
     if(null != price_match) {
       price = price_match[0];
@@ -130,6 +159,7 @@ var getProducts = function(words_by_line) {
         prods.push(product);
       }
     }
+*/
   }
   return prods;
 }
