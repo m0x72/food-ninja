@@ -1,32 +1,31 @@
 <h4>Scan your reciept!</h4>
 <p>Submit your grocerie reciepts and let the ninja help you!</p>
 
-<form ng-submit="uploadDocument()" name="uploadForm">
-	<div class="form-group">
-	  <label for="inputTitle">Grocerie title (e.g. shop name)</label>
-	  <input class="form-control" id="inputTitle" ng-model="upload.title" placeholder="Enter title" required>
-	  <!-- <p class="help-block">Take a picture with your camera or upload an existing image.</p> -->
-	</div>
-
-	<div class="form-group">
-	  <label for="inputFile">Reciept input</label>
-	  <input type="file" id="inputFile" fileread="upload.file" required>
-	  <p class="help-block">Take a picture with your camera or upload an existing image.</p>
-	</div>
-
-	<input class="btn btn-primary" type="submit" value="Upload Now!">
-	<!-- <button type="button" class="btn btn-primary" ng-click="uploadDocument()">Upload now!</button> -->
-	<a ng-show="recieptId" ng-href="#/reciept/{{recieptId}}" ><button type="button" class="btn btn-success">Go to your reciept...</button></a>
-</form>
-
-<div style="height:20px"></div>
-
 <div class="panel panel-default">
   <div class="panel-body">
-    State: {{state}}
+    <form ng-submit="uploadDocument()" name="uploadForm">
+			<div class="form-group">
+			  <label for="inputTitle">Grocerie title (e.g. shop name)</label>
+			  <input class="form-control" id="inputTitle" ng-model="upload.title" placeholder="Enter title" required>
+			  <!-- <p class="help-block">Take a picture with your camera or upload an existing image.</p> -->
+			</div>
+
+			<div class="form-group">
+			  <label for="inputFile">Reciept input</label>
+			  <input type="file" id="inputFile" fileread="upload.file" required>
+			  <p class="help-block">Take a picture with your camera or upload an existing image.</p>
+			</div>
+
+			<input class="btn btn-primary" type="submit" value="Upload Now!">
+			<!-- <button type="button" class="btn btn-primary" ng-click="uploadDocument()">Upload now!</button> -->
+			<a ng-show="recieptId" ng-href="#/reciept/{{recieptId}}" ><button type="button" class="btn btn-success">Go to your reciept...</button></a>
+		</form>
   </div>
 </div>
 
+<div style="height:20px"></div>
+
+<div class="alert alert-info" role="alert">Upload State: {{state}}</div>
 
 
 
