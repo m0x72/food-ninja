@@ -12,70 +12,72 @@ angular.module('foodNinjaApp')
   	var giniApiSuffix = 'https://api.gini.net';
 
   	
-  	this.resDocument = $resource(
-  		giniApiSuffix + '/documents/:documentId',
-  		{documentId: '@id'},
-  		{
-  			save: {
-  				method: 'POST', 
-					params: {filename: 'file.pdf', doctype: 'Reciept'},
-					transformRequest: angular.identity,
-					transformResponse: function(data, headersGetter) {
-						return {
-							id: headersGetter('location').replace(/^https:\/\/api.gini.net\/documents\//, '')
-						};
-					},
-  				headers: {
-  					'Authorization': 'Bearer',
-  					'Accept': 'application/vnd.gini.v1+json',
-  					'Content-Type': undefined
-  				}
-  			},
-  			query: {
-  				method: 'GET',
-  				params: {limit: 50, offset: 0},
-  				isArray: true,
-  				transformResponse: function(data, headersGetter) {
-  					return angular.fromJson(data).documents;
-  				},
-  				headers: {
-	    			'Authorization': 'Bearer',
-  					'Accept': 'application/vnd.gini.v1+json',
-  				}
-  			},
-  			get: {
-  				method: 'GET',
-  				headers: {
-  					'Authorization': 'Bearer',
-  					'Accept': 'application/vnd.gini.v1+json',	
-  				}
-  			}, 
-  			delete: {
-  				method: 'DELETE',
-  				headers: {
-  					'Authorization': 'Bearer',
-  					'Accept': 'application/vnd.gini.v1+json',	
-  				}
-  			},
-  			layout: {
-  				url: giniApiSuffix + '/documents/:documentId/layout',
-  				params: {documentId: '@id'},
-  				method: 'GET',
-  				headers: {
-	    			'Authorization': 'Bearer',
-  					'Accept': 'application/vnd.gini.v1+json',
-  				}
-  			},
-  			extractions: {
-  				url: giniApiSuffix + '/documents/:documentId/extractions',
-  				method: 'GET',
-  				headers: {
-	    			'Authorization': 'Bearer',
-  					'Accept': 'application/vnd.gini.incubator+json',
-  				}
-  			}
-  		}
-  	);
+  	this.resDocument = function() {
+      return $resource(
+    		giniApiSuffix + '/documents/:documentId',
+    		{documentId: '@id'},
+    		{
+    			save: {
+    				method: 'POST', 
+  					params: {filename: 'file.pdf', doctype: 'Reciept'},
+  					transformRequest: angular.identity,
+  					transformResponse: function(data, headersGetter) {
+  						return {
+  							id: headersGetter('location') ? headersGetter('location').replace(/^https:\/\/api.gini.net\/documents\//, '') : null
+  						};
+  					},
+    				headers: {
+    					'Authorization': 'Bearer',
+    					'Accept': 'application/vnd.gini.v1+json',
+    					'Content-Type': undefined
+    				}
+    			},
+    			query: {
+    				method: 'GET',
+    				params: {limit: 50, offset: 0},
+    				isArray: true,
+    				transformResponse: function(data, headersGetter) {
+    					return angular.fromJson(data).documents;
+    				},
+    				headers: {
+  	    			'Authorization': 'Bearer',
+    					'Accept': 'application/vnd.gini.v1+json',
+    				}
+    			},
+    			get: {
+    				method: 'GET',
+    				headers: {
+    					'Authorization': 'Bearer',
+    					'Accept': 'application/vnd.gini.v1+json',	
+    				}
+    			}, 
+    			delete: {
+    				method: 'DELETE',
+    				headers: {
+    					'Authorization': 'Bearer',
+    					'Accept': 'application/vnd.gini.v1+json',	
+    				}
+    			},
+    			layout: {
+    				url: giniApiSuffix + '/documents/:documentId/layout',
+    				params: {documentId: '@id'},
+    				method: 'GET',
+    				headers: {
+  	    			'Authorization': 'Bearer',
+    					'Accept': 'application/vnd.gini.v1+json',
+    				}
+    			},
+    			extractions: {
+    				url: giniApiSuffix + '/documents/:documentId/extractions',
+    				method: 'GET',
+    				headers: {
+  	    			'Authorization': 'Bearer',
+    					'Accept': 'application/vnd.gini.incubator+json',
+    				}
+    			}
+    		}
+    	)
+    };
 
 		this.eventSubscription = function() {
 			return new EventSource('https://notifications.gini.net/events/client');

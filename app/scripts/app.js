@@ -44,7 +44,7 @@ angular
         templateUrl: 'views/dummytemplates.html',
         controller: 'DummytemplatesCtrl'
       })
-      .when('/documents', {
+      .when('/document', {
         templateUrl: 'views/documents.html',
         controller: 'DocumentsCtrl'
       })
@@ -60,7 +60,7 @@ angular
         templateUrl: 'views/reciept.html',
         controller: 'RecieptCtrl'
       })
-      .when('/reciepts', {
+      .when('/reciept', {
         templateUrl: 'views/reciepts.html',
         controller: 'RecieptsCtrl'
       })
