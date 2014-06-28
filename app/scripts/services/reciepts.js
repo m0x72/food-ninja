@@ -40,9 +40,9 @@ angular.module('foodNinjaApp')
 
     // class methods
     return {
-      addReciept: function (title, recieptdata) {
+      addReciept: function (title, products, sum) {
         var timestamp = new Date().getTime();
-        reciepts[timestamp] = {title: title, data: recieptdata};
+        reciepts[timestamp] = {title: title, products: products, sum: sum};
         _persistToLocalStorage();
         return timestamp;
       },
