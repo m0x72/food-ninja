@@ -16,6 +16,11 @@ angular.module('foodNinjaApp')
       	recieptId: '='
       },
       link: function postLink(scope, element, attrs) {
+      	scope.initExpiration = function (product) {
+      		if (!product.expiration) {
+      			product.expiration = Date.now();
+      		}
+      	}
         //
       }
     };

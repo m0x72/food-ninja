@@ -13,16 +13,29 @@
 		  	<tr>
 		  		<th>Name</th>
 		  		<th>Price</th>
+		  		<th>Expriation</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr ng-repeat="product in reciept.products">
-					<td>{{product.name}}</td>
-					<td>{{product.price}}</td>
+					<td ng-hide="edit">{{product.name}}</td>
+					<td ng-hide="edit">{{product.price}}</td>
+					<td ng-hide="edit" ng-click="edit = true; initExpiration(product);">
+						<span ng-show="!!product.expiration">in {{(product.expiration - recieptId) / 62400000 | number:0}} days</span>
+						<span ng-hide="!!product.expiration">never</span>
+					</td>
+					<td ng-show="edit" colspan="3">
+						<button class="btn btn-primary" ng-click="product.expiration = product.expiration - 62400000">-</button>
+						<span>in {{(product.expiration - recieptId) / 62400000 | number:0}} days</span>
+						<button class="btn btn-primary" ng-click="product.expiration = product.expiration + 62400000">+</button>
+						<button class="btn btn-success" ng-click="edit = false">ok</button>
+						<button class="btn btn-warn" ng-click="product.expiration = 0; edit = false">reset</button>
+					</td>
 				</tr>
 				<tr>
 					<td><strong>Sum total</strong></td>
 					<td><strong>{{reciept.sum}}</strong></td>
+					<td></td>
 				</tr>
 			</tbody>
 		</table>

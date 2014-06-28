@@ -183,6 +183,14 @@ angular.module('foodNinjaApp')
       return hash;
     };
 
+    function productHash(products) {
+      var obj = {};
+      products.forEach(function(val, ind){
+        obj[_hashCode(Math.random().toString())] = val;
+      });
+      return obj;
+    };
+
     // inititialization
     var reciepts = loadReciepts();
 
@@ -190,7 +198,7 @@ angular.module('foodNinjaApp')
     return {
       addReciept: function (giniId, title, products, sum) {
         var timestamp = new Date().getTime();
-        reciepts[timestamp] = {title: title, products: products, sum: sum};
+        reciepts[timestamp] = {giniId: giniId, title: title, products: productHash(products), sum: sum};
         _persistToLocalStorage();
         return timestamp;
       },
