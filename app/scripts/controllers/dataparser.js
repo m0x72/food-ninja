@@ -74,8 +74,9 @@ var unifyLines = function(lines) {
             }
           }
       }
-    }
     ls.push(same_line);
+    }
+    //moved from here
   }
  return ls;
 }
@@ -102,14 +103,52 @@ var getWordsByLine = function(lines) {
 }
 
 
+//take only (EUR, SUMME) part.
+//not urgent
+var getProducts = function(words_by_line) { 
+
+  var prods = [];
+
+  for (var wd_idx in words_by_line) {
+
+    var str = words_by_line[wd_idx];
+
+    //get price
+    var price = "";
+    var name = "";
+    var price_match = /\s[0-9]+,[0-9]+\s/i.exec(str);
+    if(null != price_match) {
+      price = price_match[0];
+      str = str.substring(0,price_match.index);
+      name = str;
+
+      if(name != "") {
+        var product = {
+        "name" : name,
+        "price": price
+      };
+        prods.push(product);
+      }
+    }
+  }
+  return prods;
+}
+
+
+
+
+
   var ls = getLines(data);
-  //console.log("lines",ls);
+  console.log("lines",ls);
 
   ls = unifyLines(ls);
-  //console.log("unified at last", ls);
+  console.log("unified at last", ls);
 
   var words_by_line = getWordsByLine(ls);
   console.log("words by line", words_by_line);
+
+  var products = getProducts(words_by_line);
+  console.log("products", products);  
 
   var parser = function (data) {
     
