@@ -8,7 +8,7 @@
  * Controller of the foodNinjaApp
  */
 angular.module('foodNinjaApp')
-  .controller('UploadCtrl', function ($scope, Documents, Giniapi, Reciepts) {
+  .controller('UploadCtrl', function ($scope, Documents, Giniapi, Reciepts, $q) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -23,15 +23,11 @@ angular.module('foodNinjaApp')
 
     	$scope.state = "uploading";
     	$scope.document = Documents.uploadDocument(formData);
-    	$scope.document.$promise.then(
-    		listenToProcessed, 
-    		function(){
-	    		$scope.state = "Error uploading, retry"; 
-	    		throw Error('Error uploading');
-    		}
-    	).then(
-    		processToReciept
-    	);
+    	$scope.document.$promise.then(listenToProcessed, function(error){
+            console.log("error", error);
+            $scope.state = "Error uploading, retry"; 
+    		//throw Error('Error uploading');
+		});
     };
 
     var listenToProcessed = function(data) {
@@ -39,8 +35,9 @@ angular.module('foodNinjaApp')
     	return Documents.getProcessedEvent(data.id).then(function(data){
     		$scope.document = data;
     		$scope.state = 'processed';
-    		return data;
+    		return getGiniData(data);
     	}, function(error) {
+            console.log("error", error);
     		$scope.state = error;
     		throw Error('Error processing on gini');
     	}, function(notification) {
@@ -49,15 +46,31 @@ angular.module('foodNinjaApp')
     };
 
     var processToReciept = function(data) {
-    	return Documents.getDocumentLayout(data.id).$promise.then(function(data) {
-    		console.log('doc layout', data);
-	    	$scope.recieptId = Reciepts.addReciept('no title', Reciepts.parseReciept(data));
-	    	$scope.reciept = Reciepts.getReciept($scope.recieptId);
-    	}, function(error) {
-    		$scope.state = "error retrieving doc layout";
-    		throw Error("error retrieving doc layout");
-    	});
-    }
+        // discared currency for now
+        var sum = data.exData.extractions.extractions.amountToPay ? data.exData.extractions.extractions.amountToPay.value.replace(/:[A-Z]+$/, "") : null;
+        console.log(sum);
+        var parsedReciept = Reciepts.parseReciept(data.exData.layout);
+        $scope.recieptId = Reciepts.addReciept(data.docData.id, null, parsedReciept, sum);
+        $scope.reciept = Reciepts.getReciept($scope.recieptId);
+        $scope.state = "reciept created";
+    };
+
+    var getGiniData = function(docData) {
+        return $q.all({
+            layout: Documents.getDocumentLayout(docData.id).$promise,
+            extractions: Documents.getDocumentExtractions(docData.id).$promise
+        }).then(
+            function(exData) {
+                $scope.state = "extractions retrieved from gini";
+                processToReciept({docData: docData, exData: exData});
+            },
+            function(error) {
+                console.log("error", error);
+                $scope.state = "error retrieving doc layout";
+                throw Error("error retrieving doc layout");
+            }
+        );
+    };
 
     $scope.updateReciept = function(id, reciept) {
     	console.log('updateReciept', id, reciept);
