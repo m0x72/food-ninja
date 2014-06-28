@@ -28,8 +28,8 @@
 						<button class="btn btn-primary" ng-click="product.expiration = product.expiration - 62400000">-</button>
 						<span>in {{(product.expiration - recieptId) / 62400000 | number:0}} days</span>
 						<button class="btn btn-primary" ng-click="product.expiration = product.expiration + 62400000">+</button>
-						<button class="btn btn-success" ng-click="edit = false">ok</button>
-						<button class="btn btn-warn" ng-click="product.expiration = 0; edit = false">reset</button>
+						<button class="btn btn-success" ng-click="edit = false; updateReciept();">ok</button>
+						<button class="btn btn-warn" ng-click="product.expiration = 0; edit = false; updateReciept();">reset</button>
 					</td>
 				</tr>
 				<tr>
