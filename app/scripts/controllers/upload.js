@@ -19,7 +19,7 @@ angular.module('foodNinjaApp')
 
     $scope.uploadDocument = function() {
     	var formData = new FormData();
-    	formData.append('file', $scope.file);
+    	formData.append('file', $scope.upload.file);
 
     	$scope.state = "uploading";
     	$scope.document = Documents.uploadDocument(formData);
@@ -50,7 +50,7 @@ angular.module('foodNinjaApp')
         var sum = data.exData.extractions.extractions.amountToPay ? data.exData.extractions.extractions.amountToPay.value.replace(/:[A-Z]+$/, "") : null;
         console.log(sum);
         var parsedReciept = Reciepts.parseReciept(data.exData.layout);
-        $scope.recieptId = Reciepts.addReciept(data.docData.id, null, parsedReciept, sum);
+        $scope.recieptId = Reciepts.addReciept(data.docData.id, $scope.upload.title, parsedReciept, sum);
         $scope.reciept = Reciepts.getReciept($scope.recieptId);
         $scope.state = "reciept created";
     };

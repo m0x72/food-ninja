@@ -64,6 +64,10 @@ angular
         templateUrl: 'views/reciepts.html',
         controller: 'RecieptsCtrl'
       })
+      .when('/expire', {
+        templateUrl: 'views/expire.html',
+        controller: 'ExpireCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
