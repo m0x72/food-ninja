@@ -1,18 +1,18 @@
 'use strict';
 
-describe('Service: dummyReciept', function () {
+describe('Service: Dummyreciept', function () {
 
   // load the service's module
   beforeEach(module('foodNinjaApp'));
 
   // instantiate service
-  var dummyReciept;
-  beforeEach(inject(function (_dummyReciept_) {
-    dummyReciept = _dummyReciept_;
+  var Dummyreciept;
+  beforeEach(inject(function (_Dummyreciept_) {
+    Dummyreciept = _Dummyreciept_;
   }));
 
   it('should do something', function () {
-    expect(!!dummyReciept).toBe(true);
+    expect(!!Dummyreciept).toBe(true);
   });
 
 });

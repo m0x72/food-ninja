@@ -1,18 +1,18 @@
 'use strict';
 
-describe('Service: giniApi', function () {
+describe('Service: Giniapi', function () {
 
   // load the service's module
   beforeEach(module('foodNinjaApp'));
 
   // instantiate service
-  var giniApi;
-  beforeEach(inject(function (_giniApi_) {
-    giniApi = _giniApi_;
+  var Giniapi;
+  beforeEach(inject(function (_Giniapi_) {
+    Giniapi = _Giniapi_;
   }));
 
   it('should do something', function () {
-    expect(!!giniApi).toBe(true);
+    expect(!!Giniapi).toBe(true);
   });
 
 });

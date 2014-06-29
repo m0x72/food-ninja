@@ -203,9 +203,11 @@ var unifyLines = function(lines) {
 
     function productHash(products) {
       var obj = {};
-      products.forEach(function(val, ind){
-        obj[_hashCode(Math.random().toString())] = val;
-      });
+      if (angular.isArray(products)) {
+        products.forEach(function(val, ind){
+          obj[_hashCode(Math.random().toString())] = val;
+        });
+      }
       return obj;
     };
 

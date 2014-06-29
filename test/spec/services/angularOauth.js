@@ -1,18 +1,18 @@
 'use strict';
 
-describe('Service: oauth', function () {
+describe('Service: OAuth', function () {
 
   // load the service's module
   beforeEach(module('foodNinjaApp'));
 
   // instantiate service
-  var oauth;
-  beforeEach(inject(function (_oauth_) {
-    oauth = _oauth_;
+  var OAuth;
+  beforeEach(inject(function (_OAuth_) {
+    OAuth = _OAuth_;
   }));
 
   it('should do something', function () {
-    expect(!!oauth).toBe(true);
+    expect(!!OAuth).toBe(true);
   });
 
 });
