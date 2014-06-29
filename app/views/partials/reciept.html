@@ -2,7 +2,7 @@
 	
 	<div class="panel-heading">
 		<a ng-href="#/reciept/{{recieptId}}">
-			<h4 style="display:inline-block;">{{reciept.title || "- no title -"}}</h4>
+			<h4 style="display:inline-block;">{{reciept.title || "- no title specified -"}}</h4>
 			<!-- <h4 style="display:inline-block; margin-left: 20px;" ng-show="!!reciept.sum">€ {{reciept.sum}}</h4> -->
 		</a>
 		<span class="date pull-right">{{recieptId | date:'dd.MM.yyyy HH:mm'}}</span>
@@ -39,5 +39,6 @@
 				</tr>
 			</tbody>
 		</table>
+		<button class="btn btn-danger" ng-click="deleteReciept();">Delete Reciept</button>
 	</div>
 </div>

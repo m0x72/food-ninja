@@ -22,9 +22,13 @@ angular.module('foodNinjaApp')
       	};
       	scope.initExpiration = function (product) {
       		if (!product.expiration) {
-      			product.expiration = Date.now();
+      			product.expiration = new Date().getTime();
       		}
-      	}
+      	};
+      	scope.deleteReciept = function() {
+      		Reciepts.deleteReciept(scope.recieptId);
+      	};
+      	console.log("test");
         //
       }
     };

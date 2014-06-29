@@ -212,6 +212,10 @@ angular.module('foodNinjaApp')
         reciepts[id] = recieptdata;
         _persistToLocalStorage();
       },
+      deleteReciept: function(recieptId) {
+        delete reciepts[recieptId];
+        _persistToLocalStorage();
+      },
       parseReciept: function (data) {
         var ls = getLines(data);
         //console.log("lines", ls);
