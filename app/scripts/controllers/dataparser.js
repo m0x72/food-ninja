@@ -74,6 +74,23 @@ var unifyLines = function(lines) {
             }
           }
       }
+//      console.log("same_line BEFORE swap", same_line);
+
+    //order lines on same row in increasing order by left-page offset
+      for(var ii=0; ii<same_line.length-1; ++ii) {
+        for(var jj=ii+1; jj<same_line.length; ++jj) {
+          //line 1 should be before line2 on that same level
+  //        console.log(line1,parseFloat(line1.l));
+  //        console.log(line2,parseFloat(line2.l));
+          if(parseFloat(same_line[ii].l) > parseFloat(same_line[jj].l)) {
+            var aux = same_line[ii];
+            same_line[ii] = same_line[jj];
+            same_line[jj] = aux;
+   //         console.log("swaaped", line1, line2);
+          }
+        }
+      }
+//      console.log("same_line AFTER swap", same_line);
     ls.push(same_line);
     }
     //moved from here
@@ -125,7 +142,7 @@ var getProducts = function(words_by_line) {
     }
 
     //get price v2
-    var price_match = /\s([0-9]+,[0-9]+)\s*(A|B|EUR)*$/i.exec(str);
+    var price_match = /\s([0-9]+(,|\.)[0-9]+)\s*(A|B|EUR)*$/i.exec(str);
     if(null != price_match) {
       price = price_match[1];
       str = str.substring(0,price_match.index);
@@ -138,9 +155,10 @@ var getProducts = function(words_by_line) {
         "name" : name,
         "price": price
       };
-        prods.push(product);
-        if(null != /(summe|zahlen)/gi.exec(name))
+      if(null != /(summe|zahlen)/gi.exec(name))
           return prods;
+        prods.push(product);
+
       }
     }
 /*
