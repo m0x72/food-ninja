@@ -7,7 +7,8 @@ before_script:
 - gem install compass --version "=0.12.3"
 - npm install -g bower grunt-cli
 - bower install
-- grunt
+after_success:
+- grunt build
 deploy: 
   api_key: 
     secure: X+7MOqJWICID/KYdUVHIYeUMduN5NDRiksO+S/P3RLM/vsKUkJrE5ZTMjsmghaXeC3L3t34PlR2FFTnh7vspZMfRdLggr5jPG4YdidfbGEwXvnaVPvkPadZp/ZD3wixlpSS2j6KHyYv49yM16G9SqWp0s72q81jrkKmKB1yDkp0=
