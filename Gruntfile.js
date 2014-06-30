@@ -364,6 +364,12 @@ module.exports = function (grunt) {
         cwd: '<%= yeoman.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
+      },
+      heroku: {
+        expand: true,
+        cwd: '<%= yeoman.app %>',
+        dest: 'dist/',
+        src: ['.travis.yml', 'web.js', 'Procfile', 'package.json']
       }
     },
 
@@ -435,6 +441,11 @@ module.exports = function (grunt) {
     'filerev',
     'usemin',
     'htmlmin'
+  ]);
+
+  grunt.registerTask('buildHeroku', [
+    'build',
+    'copy:heroku'
   ]);
 
   grunt.registerTask('default', [

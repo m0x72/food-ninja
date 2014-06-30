@@ -17,5 +17,5 @@ before_script:
 - npm install -g bower grunt-cli
 - bower install
 after_success: 
-- grunt build
-- ./deploy
+- grunt buildHeroku
+- ./deploy.sh
