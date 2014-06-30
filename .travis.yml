@@ -4,7 +4,7 @@ node_js:
 deploy: 
   api_key: 
     secure: X+7MOqJWICID/KYdUVHIYeUMduN5NDRiksO+S/P3RLM/vsKUkJrE5ZTMjsmghaXeC3L3t34PlR2FFTnh7vspZMfRdLggr5jPG4YdidfbGEwXvnaVPvkPadZp/ZD3wixlpSS2j6KHyYv49yM16G9SqWp0s72q81jrkKmKB1yDkp0=
-  on: staging
+  on: heroku
   app: foodninja
   provider: heroku
 env: 
