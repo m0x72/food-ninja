@@ -367,8 +367,8 @@ module.exports = function (grunt) {
       },
       heroku: {
         expand: true,
-        cwd: '<%= yeoman.app %>',
-        dest: 'dist/',
+        cwd: '',
+        dest: '<%= yeoman.dist %>',
         src: ['.travis.yml', 'web.js', 'Procfile', 'package.json']
       }
     },
@@ -449,7 +449,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('default', [
-    // 'newer:jshint',
+    'newer:jshint',
     'test',
     'build'
   ]);
