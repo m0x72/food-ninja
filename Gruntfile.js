@@ -368,8 +368,8 @@ module.exports = function (grunt) {
       heroku: {
         expand: true,
         cwd: '',
-        dest: '<%= yeoman.dist %>',
-        src: ['.travis.yml', 'web.js', 'Procfile', 'package.json']
+        dest: 'heroku',
+        src: '<%= yeoman.dist %>/**'
       }
     },
 

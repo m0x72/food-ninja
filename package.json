@@ -1,11 +1,7 @@
 {
   "name": "foodninja",
   "version": "0.0.0",
-  "dependencies": {
-    "express": "^4.4.5",
-    "gzippo": "^0.2.0",
-    "morgan": "^1.1.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.1",
     "grunt-autoprefixer": "^0.7.3",

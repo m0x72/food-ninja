@@ -1,0 +1,13 @@
+{
+  "name": "heroku",
+  "version": "0.0.1",
+  "description": "heroku app for food-ninja",
+  "main": "web.js",
+  "author": "m0x72",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.4.5",
+    "gzippo": "^0.2.0",
+    "morgan": "^1.1.1"
+  }
+}
