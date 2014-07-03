@@ -1,21 +1,9 @@
 language: node_js
 node_js: 
 - "0.10"
-deploy: 
-  api_key: 
-    secure: X+7MOqJWICID/KYdUVHIYeUMduN5NDRiksO+S/P3RLM/vsKUkJrE5ZTMjsmghaXeC3L3t34PlR2FFTnh7vspZMfRdLggr5jPG4YdidfbGEwXvnaVPvkPadZp/ZD3wixlpSS2j6KHyYv49yM16G9SqWp0s72q81jrkKmKB1yDkp0=
-  on: heroku
-  app: foodninja
-  provider: heroku
-env: 
-  global: 
-    secure: IFZ1DZMRD9xuvWlpDDWx6DERbMwQZ7sMelioWUBB/CjyXN14N7pP5LpbDXo/XTxa2YcHp58FcFGNlLH4jUbShcBKhNqY9PAlaIVKaVzEwCZqEeTfaCQcpsO8uMaEJ8cZkL7E48KsuRhCN+1U0t3toXxNXMLYm42s70jSbl9yrnQ=
 before_script: 
 - gem update --system
 - gem install sass --version "=3.3.7"
 - gem install compass --version "=0.12.3"
 - npm install -g bower grunt-cli
 - bower install
-after_success: 
-- grunt buildHeroku
-- ./deploy.sh
