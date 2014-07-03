@@ -17,10 +17,10 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat="product in reciept.products">
+				<tr ng-repeat="product in reciept.products" ng-init="edit = false">
 					<td ng-hide="edit">{{product.name}}</td>
 					<td ng-hide="edit">{{product.price}}</td>
-					<td ng-hide="edit" ng-click="edit = true; initExpiration(product);">
+					<td style="cursor:pointer" ng-hide="edit" ng-click="edit = true; initExpiration(product);">
 						<span ng-show="!!product.expiration">in {{(product.expiration - recieptId) / 62400000 | number:0}} days</span>
 						<span ng-hide="!!product.expiration">never</span>
 					</td>
@@ -29,7 +29,7 @@
 						<span>in {{(product.expiration - recieptId) / 62400000 | number:0}} days</span>
 						<button class="btn btn-primary" ng-click="product.expiration = product.expiration + 62400000">+</button>
 						<button class="btn btn-success" ng-click="edit = false; updateReciept();">ok</button>
-						<button class="btn btn-warn" ng-click="product.expiration = 0; edit = false; updateReciept();">reset</button>
+						<button class="btn btn-warning" ng-click="product.expiration = 0; edit = false; updateReciept();">reset</button>
 					</td>
 				</tr>
 				<tr>
@@ -39,6 +39,6 @@
 				</tr>
 			</tbody>
 		</table>
-		<button class="btn btn-danger" ng-click="deleteReciept();">Delete Reciept</button>
+		<button class="btn btn-danger" ng-click="deleteReciept();">Delete Receipt</button>
 	</div>
 </div>
