@@ -72,16 +72,15 @@ angular
         redirectTo: '/'
       });
   })
-  
   .config(function(OAuthProvider) {
+    var redirectUri = window.location.protocol + "//" + window.location.host + "/#/authCallback?";
     OAuthProvider.extendConfig({
       clientId: 'team6',
-      redirectUri: 'http://localhost:9000/#/authCallback?',
+      redirectUri: redirectUri,
       authorizationEndpoint: 'https://user.gini.net/oauth/authorize',
       verifyFunc: 'test'
     });
   })
   .config(function($httpProvider) {
     $httpProvider.interceptors.push('oauthHttpInterceptor');
-  })
-  ;
+  });
